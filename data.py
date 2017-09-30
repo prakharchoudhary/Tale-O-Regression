@@ -24,7 +24,8 @@ def visualize_scatterplot(df):
 	if not os.path.exists(os.path.join(os.getcwd(), 'figures')):
 		os.mkdir('figures')
 	
-	plt.savefig('./figures/scatterplot.png')
+	plt.show()
+	# plt.savefig('./figures/scatterplot.png')
 	plt.gcf().clear()		# to ensure the canvas is clear for next plot
 
 def corr_heatmap(df):
@@ -39,6 +40,6 @@ def corr_heatmap(df):
 			annot_kws={'size': 15},
 			yticklabels=cols,
 			xticklabels=cols)
-	# plt.show()
-	plt.savefig('./figures/correlation-heatmap.png')
+	plt.show()
+	# plt.savefig('./figures/correlation-heatmap.png')
 	plt.gcf().clear()
